@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        document.write("<h1>Welcome to Arii website!</h1>") 
-    </script>
+    <div id="header-container">
+        <script>
+            document.write("<h1>Welcome to Arii website!</h1>");
+        </script>
+    </div>
     <h2>My Profile</h2>
     <style>
+        #header-container {
+                background-image: url(image/fpt.jpg); 
+                background-size: cover;
+                background-position: center;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 20px;
+                border-radius: 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
         img {
             display: block;
             margin-bottom: 20px;
@@ -21,6 +33,12 @@
             text-align: center;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audioElement = document.getElementById('myAudio');
+            audioElement.play();
+        });
+    </script>
     
 </head>
 <body> 
@@ -34,7 +52,7 @@
         <h2>My social network</h2>
             <button onclick="window.location.href='https://www.facebook.com/dangvtn2k4/'">My Facebook!</button>
             <button onclick="window.location.href='https://www.tiktok.com/@_riin.24esz_'">My Tiktok!</button>
-            <audio controls="controls" src="audio/dynatsy.mp3"></audio>
+            <audio controls="controls" id="myAudio" src="audio/dynatsy.mp3" autoplay></audio>
             <footer>
                 <p style="font-size:15px">&copy; This website make by Arii, do not copy!</p>
             </footer>
