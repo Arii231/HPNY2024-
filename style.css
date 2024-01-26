@@ -1,5 +1,6 @@
 #header-container {
-        background-image: url(image/fpt.jpg); 
+        background-image: url(image/fpt.jpg);
+        opacity: 0.9;
         background-size: cover;
         background-position: center;
         color: rgb(255, 255, 255);
@@ -9,15 +10,22 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         box-shadow: orange 0px 2px 8px 0px;
 }
+#datetime {
+    font-size: 24px;
+    text-align: left;
+    margin: 20px;
+}
 img {
     display: block;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 audio {
     display: block;
     margin-top: 20px;
 }
 body {
+    margin-left: 20px;
     background-color: rgb(255, 255, 255);
 }
 footer {
@@ -43,4 +51,19 @@ ul > li > a {
 	gap: 0em;
 }ul {
 	padding: auto;
+}
+.zoom img{
+	display:block;
+	transition: all 1s ease;
+}
+.zoom img:hover{
+	transform: scale(1.1); 
+} 
+.zoom div{
+	display:block;
+	overflow: hidden;
+}
+hr {
+    width: 80%; /* Điều chỉnh chiều rộng của đường kẻ ngang */
+    margin: 20px auto; /* Canh giữa đường kẻ ngang */
 }
