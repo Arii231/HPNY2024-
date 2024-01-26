@@ -55,6 +55,30 @@ ul > li > a {
 .zoom img{
 	display:block;
 	transition: all 1s ease;
+    max-height: 50%;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin: 0;
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        position: absolute;
+}
+.zoom1 img{
+    display:block;
+	transition: all 1s ease;
+    max-height: 50%;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        margin: 0;
+    width: auto;
+    height: auto;
+    margin-left: 800px;
+    position: absolute;
 }
 .zoom img:hover{
 	transform: scale(1.1); 
@@ -63,7 +87,25 @@ ul > li > a {
 	display:block;
 	overflow: hidden;
 }
+.zoom1 img:hover{
+	transform: scale(1.1); 
+} 
+.zoom1 div{
+	display:block;
+	overflow: hidden;
+}
+.zoom2 img{
+    display:block;
+	transition: all 1s ease;
+}
+.zoom2 img:hover{
+	transform: scale(1.1); 
+} 
+.zoom2 div{
+	display:block;
+	overflow: hidden;
+}
 hr {
-    width: 80%;
-    margin: 20px auto;
+    width: 80%; /* Điều chỉnh chiều rộng của đường kẻ ngang */
+    margin: 20px auto; /* Canh giữa đường kẻ ngang */
 }
