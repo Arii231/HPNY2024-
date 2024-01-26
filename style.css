@@ -64,6 +64,6 @@ ul > li > a {
 	overflow: hidden;
 }
 hr {
-    width: 80%; /* Điều chỉnh chiều rộng của đường kẻ ngang */
-    margin: 20px auto; /* Canh giữa đường kẻ ngang */
+    width: 80%;
+    margin: 20px auto;
 }
