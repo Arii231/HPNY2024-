@@ -10,6 +10,10 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         box-shadow: orange 0px 2px 8px 0px;
 }
+#container{
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+}
 #datetime {
     font-size: 24px;
     text-align: left;
@@ -108,4 +112,34 @@ ul > li > a {
 hr {
     width: 80%; /* Điều chỉnh chiều rộng của đường kẻ ngang */
     margin: 20px auto; /* Canh giữa đường kẻ ngang */
+}
+
+h1{
+    color:#fff;
+    margin:0;
+    font-size: 25px;
+    font-family: 'Snowburst One', cursive;
+}
+.snow{
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:50px;
+    background-image: url(image/snow.png);
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+}
+@keyframes animationSnow{
+    0%{
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(100px,100%);
+    }
 }
