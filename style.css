@@ -81,7 +81,7 @@ ul > li > a {
         margin: 0;
     width: auto;
     height: auto;
-    margin-left: 800px;
+    margin-left: 900px;
     position: absolute;
 }
 .zoom img:hover{
@@ -145,7 +145,7 @@ h2 {
     }
     100%{
         opacity: 0;
-        transform: translate(20px,100%);
+        transform: translate(50px,100%);
     }
 }
 .multiText{
