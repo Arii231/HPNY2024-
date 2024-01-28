@@ -41,33 +41,50 @@
 </head>
 <body>
     <div id="container">
-    <div class="snow"></div>
+        <div class="snow"></div>
     </div>
-	<p><b>Name:</b> Vo Truong Nhat Dang, my nickname is Arii</p>
-    <p><b>Hobbies:</b> Playing games, sightseeing, listening to music</p> 
-    <div class="zoom2">
-        <img style="box-shadow: black 0px 2px 8px 0px;" src="image/fb.jpg" alt="Cat" width="200" height="200">
-    </div>   
-   
-    <h2>My Certificate</h2>
-    <p><a href="https://coursera.org/share/fe9bb890ed70dff3335b7b7f5d57ebb9" target="_blank">Computer Communications</a>
-    <p><a href="https://coursera.org/share/852d25684c7f2b24803614934a33ed9e" target="_blank">Academic Skills for University Success</a>
-    <body>
-        <h2>My social network</h2>
+    <div id="profile-section">
+        <p style="font-size: 18px;"><b>Name:</b> <span class="multiText"></span></p>
+        <p style="font-size: 18px;"><b>Hobbies:</b> Playing games, sightseeing, listening to music</p>
+        <div class="zoom2 profile-image">
+            <img style="box-shadow: black 0px 2px 8px 0px;" src="image/fb.jpg" alt="Cat" width="200" height="200">
+        </div>
+    </div>
+
+    <div class="certificate-section">
+        <h2>My Certificate</h2>
+        <p><a href="https://coursera.org/share/fe9bb890ed70dff3335b7b7f5d57ebb9" target="_blank" class="certificate-link">Computer Communications</a></p>
+        <p><a href="https://coursera.org/share/852d25684c7f2b24803614934a33ed9e" target="_blank" class="certificate-link">Academic Skills for University Success</a></p>
+    </div>
+
+    <div id="social-network-section">
+        <h2>My Social Network</h2>
         <ul>
-            <li> 
-                <a href="https://www.facebook.com/dangvtn2k4/"><img src="image/fb1.png" style="height: 50px; width: 90px;">Facebook</a>                            
+            <li class="social-link">
+                <a href="https://www.facebook.com/dangvtn2k4/"><img src="image/fb1.png" style="height: 50px; width: 90px; display: block; margin: 0 auto;">Facebook</a>
             </li>
-            <li>
-                <a href="https://www.tiktok.com/@_riin.24esz_"><img src="image/tiktok.png" style="height: 50px; width: 50px;">TikTok</a>
+            <li class="social-link">
+                <a href="https://www.tiktok.com/@_riin.24esz_"><img src="image/tiktok.png" style="height: 50px; width: 50px; display: block; margin: 0 auto;">TikTok</a>
             </li>
         </ul>
-            <h2><a href="mygame.html">My Playing Game</a></h2>    
-            <audio controls="controls" autoplay="autoplay" id="myAudio" src="audio/dynatsy.mp3" ></audio>
-            <footer>
-                <p style="font-size:15px">&copy; This website make by Arii, do not copy!</p>
-            </footer>
-            <script src="script.js"></script>
-    </body>
+    </div>
+    <a href="mygame.html" class="go-to-game-btn">Go to My Playing Game</a>
+    <audio controls="controls" autoplay="autoplay" id="myAudio" src="audio/dynatsy.mp3"></audio>
+
+    <footer>
+        <p style="font-size:15px">&copy; This website is made by Arii, do not copy!</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Vo Truong Nhat Dang", "Arii"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+</body>
 
 </html>
