@@ -142,7 +142,7 @@ h2 {
     }
     100%{
         opacity: 0;
-        transform: translate(10px,100%);
+        transform: translate(50px,100%);
     }
 }
 .multiText{
@@ -154,11 +154,6 @@ h2 {
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-image {
-    overflow: hidden;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .certificate-link {
@@ -188,7 +183,16 @@ h2 {
     display: inline-block;
     margin-right: 20px;
 }
-
+.social-link img{
+    height: 50px; width: 90px; display: block; margin: 0 auto;
+}
+.social-link1 {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-link1 img{
+    height: 50px; width: 50px; display: block; margin: 0 auto;
+}
 .go-to-game-btn {
     text-decoration: none;
     color: #fff;
@@ -216,4 +220,19 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: auto
+}
+.profile-text {
+    font-size: 18px;
+}
+.profile-image {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);   
+}
+.profile-image img{
+    box-shadow: black 0px 2px 8px 0px;
+    width: 200px;
+    height: 200px;
+}
+.footer-text {
+    font-size: 15px;
 }
