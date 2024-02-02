@@ -164,7 +164,7 @@ h2 {
         }
 
         .social-network-section {
-            background-color: #f4f4f4;
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
@@ -211,6 +211,7 @@ h2 {
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-family: 'Snowburst One', cursive;
 }
 

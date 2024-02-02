@@ -1,39 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playing Game!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <div id="header-container">
-        <h1>My Playing Game!</h1>
-    </div>
-    
 </head>
-<main> 
-    <p class="caption"><b>Subnautica: Below Zero</b></p>
-    <div class="image-container">
+<body>
+    <header>
+        <div id="header-container">
+            <h1>My Playing Game!</h1>
+        </div>
+    </header>
+    
+    <main> 
+        <section id="subnautica">
+            <p class="caption"><b>Subnautica: Below Zero</b></p>
+            <div class="image-container">
+                <div class="zoom">
+                    <img src="image/sub.jpg" alt="fish">
+                </div>
+                <div class="zoom">
+                    <img src="image/sub1.jpg" alt="fish1">
+                </div>
+            </div>
+        </section>
         
-        <div class="zoom">
-           
-            <img src="image/sub.jpg" alt="fish">
-            
-        </div>
-    
-        <div class="zoom">
-            <img src="image/sub1.jpg" alt="fish1">
-        </div>
-    </div>
-    
-    <hr>
-    <p class="caption"><b>Naraka: BladePoint</b></p> 
-    <div class="image-container">
-        <div class="zoom">
-
-            <img src="image/nar.jpg" alt="fish">
-            
-        </div>
-    
-        <div class="zoom">
-            <img src="image/nar2.jpg" alt="fish1">
-        </div>
-    </div>
-    
-    <hr>
-        <a href="index.html" class="go-to-home-btn">Back to home</a>
-</main>
+        <hr>
+        
+        <section id="naraka">
+            <p class="caption"><b>Naraka: BladePoint</b></p> 
+            <div class="image-container">
+                <div class="zoom">
+                    <img src="image/nar.jpg" alt="fish">
+                </div>
+                <div class="zoom">
+                    <img src="image/nar2.jpg" alt="fish1">
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <nav>
+            <a href="index.html" class="go-to-home-btn">Back to home</a>
+        </nav>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; This website is made by Arii, do not copy!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

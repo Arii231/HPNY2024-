@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <div id="header-container">
-        <h1>Welcome to Arii website!</h1>
-	</div>
-    <h2>Date and Time Counter</h2>
-    <div id="datetime"></div>
-
-    <script>
-        function updateDateTime() {
-            var currentDate = new Date();
-
-            var day = currentDate.getDate();
-            var month = currentDate.getMonth() + 1;
-            var year = currentDate.getFullYear();
-
-            var hours = currentDate.getHours();
-            var minutes = currentDate.getMinutes();
-            var seconds = currentDate.getSeconds();
-
-            var formattedDate = day + '/' + month + '/' + year;
-            var formattedTime = hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-
-            document.getElementById('datetime').innerHTML = formattedDate + ' ' + formattedTime;
-            datetimeElement.classList.add('show');
-        }
-        setInterval(updateDateTime, 1000);
-
-        updateDateTime();
-    </script>
-    <h2>My Profile</h2>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var audioElement = document.getElementById('myAudio');
-            audioElement.play();
-        });
-    </script>
-
 </head>
 <body>
-    <div id="container">
-        <div class="snow"></div>
-    </div>
-    <div id="profile-section">
-        <p class="profile-text"><b>Name:</b> <span class="multiText"></span></p>
-        <p class="profile-text"><b>Hobbies:</b> Playing games, sightseeing, listening to music</p>
-        <div class="zoom2 profile-image">
-            <img class="profile-image" src="image/fb.jpg" alt="Cat">
+    <header>
+        <div id="header-container">
+            <h1>Welcome to Arii website!</h1>
         </div>
-    </div>
+    </header>
 
-    <div class="certificate-section">
-        <h2>My Certificate</h2>
-        <p><a href="https://coursera.org/share/fe9bb890ed70dff3335b7b7f5d57ebb9" target="_blank" class="certificate-link">Computer Communications</a></p>
-        <p><a href="https://coursera.org/share/852d25684c7f2b24803614934a33ed9e" target="_blank" class="certificate-link">Academic Skills for University Success</a></p>
-    </div>
+    <main>
+        <section id="s1">
+            <h2>Date and Time Counter</h2>
+            <div id="datetime"></div>
+            <script>
+                function updateDateTime() {
+                    var currentDate = new Date();
+                    var day = currentDate.getDate();
+                    var month = currentDate.getMonth() + 1;
+                    var year = currentDate.getFullYear();
+                    var hours = currentDate.getHours();
+                    var minutes = currentDate.getMinutes();
+                    var seconds = currentDate.getSeconds();
+                    var formattedDate = day + '/' + month + '/' + year;
+                    var formattedTime = hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+                    document.getElementById('datetime').innerHTML = formattedDate + ' ' + formattedTime;
+                    datetimeElement.classList.add('show');
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </section>
 
-    <div id="social-network-section">
-        <h2>My Social Network</h2>
-        <ul>
-            <li class="social-link">
-                <a href="https://www.facebook.com/dangvtn2k4/"><img src="image/fb1.png">Facebook</a>
-            </li>
-            <li class="social-link1">
-                <a href="https://www.tiktok.com/@_riin.24esz_"><img src="image/tiktok.png">TikTok</a>
-            </li>
-        </ul>
-    </div>
-    <a href="mygame.html" class="go-to-game-btn">Go to My Playing Game</a>
-    <audio controls autoplay id="myAudio" src="audio/dynatsy.mp3"></audio>
+        <section id="s2">
+            <h2>My Profile</h2>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var audioElement = document.getElementById('myAudio');
+                    audioElement.play();
+                });
+            </script>
+
+            <div id="container">
+                <div class="snow"></div>
+            </div>
+
+            <div id="profile-section">
+                <p class="profile-text"><b>Name:</b> <span class="multiText"></span></p>
+                <p class="profile-text"><b>Hobbies:</b> Playing games, sightseeing, listening to music</p>
+                <div class="zoom2 profile-image">
+                    <img class="profile-image" src="image/fb.jpg" alt="Cat">
+                </div>
+            </div>
+        </section>
+
+        <section id="s3" class="certificate-section">
+            <h2>My Certificate</h2>
+            <p><a href="https://coursera.org/share/fe9bb890ed70dff3335b7b7f5d57ebb9" target="_blank" class="certificate-link">Computer Communications</a></p>
+            <p><a href="https://coursera.org/share/852d25684c7f2b24803614934a33ed9e" target="_blank" class="certificate-link">Academic Skills for University Success</a></p>
+        </section>
+
+        <section id="s4" class="social-network-section">
+            <h2>My Social Network</h2>
+            <ul>
+                <li class="social-link">
+                    <a href="https://www.facebook.com/dangvtn2k4/"><img src="image/fb1.png">Facebook</a>
+                </li>
+                <li class="social-link1">
+                    <a href="https://www.tiktok.com/@_riin.24esz_"><img src="image/tiktok.png">TikTok</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="s5">
+            <audio controls autoplay id="myAudio" src="audio/dynatsy.mp3"></audio>
+        </section>
+    </main>
 
     <footer>
         <p class="footer-text">&copy; This website is made by Arii, do not copy!</p>
     </footer>
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -83,7 +94,7 @@
             typeSpeed: 100,
             backSpeed: 80,
             backDelay: 1500,
-        })
+        });
     </script>
 </body>
 </html>
